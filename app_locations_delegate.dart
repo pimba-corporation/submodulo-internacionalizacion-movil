@@ -6,10 +6,9 @@ import 'package:flutter/material.dart';
 class AppLocalizationsDelegate
     extends LocalizationsDelegate<AppLocalizations> {
   final List<String> submodulos;
-  final Locale locale;
   // La instancia del delegador nunca podra cambiar incluso si no tiene atributos
   // Se proporciona un constructor constante
-  const AppLocalizationsDelegate({@required this.submodulos, @required this.locale});
+  const AppLocalizationsDelegate({@required this.submodulos});
 
   @override
   bool isSupported(Locale locale) {

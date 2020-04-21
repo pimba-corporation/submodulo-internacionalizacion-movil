@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'app_locations_delegate.dart';
 
 class AppLocalizations {
-  final Locale locale;
+  Locale locale;
 
   AppLocalizations(this.locale);
 
@@ -17,7 +17,7 @@ class AppLocalizations {
 
   // Un atributo estatico para tener un acceso rapido al delegate desde el MaterialApp
   static  LocalizationsDelegate<AppLocalizations> delegate(List<String> submodulos){
-      return AppLocalizationsDelegate(submodulos: submodulos, locale: Locale('es'));
+      return AppLocalizationsDelegate(submodulos: submodulos);
 }
 
   Map<String, dynamic> _localizedStrings;
